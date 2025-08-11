@@ -13,6 +13,7 @@ def plot_univariate_distributions(df):
     print("Generating Univariate Probability Distributions")
     print("=" * 60 + "\n")
 
+
     for col in df.columns:
         # --- Plotting for NUMERIC columns ---
         if pd.api.types.is_numeric_dtype(df[col]):
